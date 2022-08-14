@@ -1,0 +1,46 @@
+Tópicos fundamentais para entender o funcionamento do Git
+
+- SHA1 
+- Objetos Fundamentais
+- Sistema Distribuído
+- Segurança
+
+-SHA1 - Secure Hash Algorithm - Criptografia
+--> Gera um conjunto de caracteres identificadores de 40 dígitos.
+comando pelo GUI BASH
+openssl sha1
+
+ex: 
+1. texto.txt -> gerado sha1 90dbe6712b39f33438e8c1a6ed7ffd08746ac46f
+2. texto.txt -> gerado após edição sha1 eb75812f98a5a3c53cb445ab81b863cc5572d6b9
+3. texto.txt -> retorna edição sha1 90dbe6712b39f33438e8c1a6ed7ffd08746ac46f
+
+Identificar as variações no código gerando hash diferentes para segurança.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Objetos internos do Git
+
+- BLOBS: Contém metados dos objetos criados.
+--> Tipo do objeto
+--> tamanho
+--> \0 
+--> Conteudo
+---------------> Figura 1 - hash gerados diferentes mesmo com o mesmo contéudo.
+---------------> Figura 3 - hash iguais gerados devido ter passado o metado do contéudo.
+
+- TREES: Armazenam BLOBS, encapsula diretórios, aponta para diretórios.
+--> Tipo do objeto
+--> tamanho
+--> blob
+--> hash da arvore.
+--> Nome do Arquivo.
+
+- COMMITS
+--> tamanho
+--> tree com seu hash.
+--> parente com seu hash.
+--> autor com seu hash.
+--> mensagem
+--> timestamp (registro de data, hora ....)
+OBS: Sha1 desse commit é o hash de toda informação.

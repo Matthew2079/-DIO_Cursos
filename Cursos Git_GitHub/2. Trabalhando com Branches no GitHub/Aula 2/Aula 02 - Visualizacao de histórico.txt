@@ -1,0 +1,36 @@
+
+--------------------------------------------------------------------------------------
+
+Comando git log
+
+OBS: :q (sai da visualização)
+
+1. $ git log (lista todo histórico de alteração em todos arquivos)
+2. $ git log nomeDaPasta
+3. $ git log nomeArquivo
+4. $ git log --oneline
+5. $ git log --graph
+4. $ gitk (exibe uma ferramenta gráfica no windows para exibir de forma visual)
+
+--------------------------------------------------------------------------------------
+
+Comando stash e seus subcomandos
+
+Comandos
+
+1. $ git branch (lista as branchs presentes no projeto)
+2. $ git branch -d nomeDaBranch (deleta a branch indicada)
+
+--> Renomeando a branch estando na mesma
+$ git branch -m novoNome
+
+--> Renomeando a partir de outra branch 
+$ git branch -m antigoNome novoNome
+
+--> Comandos stash
+1. $ git stash save "...mensagem de contexto..." (salva os arquivos que estavam no index do repositório, para ser recuperado depois e permitir a sua movimentação entre branchs sem estar carregando arquivos não comitados)
+2. $ git stash list (lista tudo que está armazenado)
+3. $ git stash pop passarOIndex 0,1 ...... (reabilita os arquivos para serem comitados)
+4. $ git stash clear (limpa os arquivos armazenados)
+
+

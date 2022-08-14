@@ -1,0 +1,20 @@
+
+--------------------------------------------------------------------------------------
+
+Conceitos sobre reverter commits
+
+Comandos
+
+$ git reset: está relacionado aos arquivos.
+
+-> pelo hash ou pelo HEAD~x (x= quantidade de reversões de commit)
+--> variações:
+	-- soft (antes do commit [index])
+	-- mixed (antes das alterações [Working Directory])
+	-- hard (apaga os arquivos gerados)
+
+$ git revert: está relacionado ao conteúdo dos arquivos.
+-> Não possui as variações.
+
+
+

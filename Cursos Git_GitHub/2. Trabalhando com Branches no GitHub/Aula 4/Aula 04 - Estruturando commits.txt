@@ -1,0 +1,57 @@
+
+Conceitos avançados sobre commits
+
+Semantic Versioning Ex: 3.2.7 (major minor patch)
+
+Conventional Commits
+
+-> A especificação do Conventional Commits é uma convenção simples para utilizar nas mensagens de commit.
+-> Ela define um conjunto de regras para criar um histórico de commit explicíto, o que facilita a criação de ferramentas automatizadas baseadas na especificação.
+-> Esta convenção se encaixa com o SemVer, descrevendo os recursos, correções e modificações que quebram a compatibilidade nas mensagens de commit.
+
+--------------------------------------------------------------------------------------
+
+Conceitos iniciais sobre estruturação de commits.
+
+Porque me importar?
+
+-> Melhor legibilidade do histórico;
+-> Amigável para novos desenvolvedores;
+-> Amigável ao versionamento semântico.
+
+Commits atômicos.
+-> É uma unidade de agrupamentos de commits de um mesmo tipo.
+
+Estrutura 
+
+-> Assunto
+ - Curto e compreensível;
+ - Até 50 caracteres;
+ - Começar com letra maiúscula
+ - Não terminar em ponto .;
+ - Escrito de forma imperativa
+  * if applied, this commit will add client action.
+  * Se aceito, esse commit adiciona ações do cliente.
+
+-> Corpo
+ - Adicione detalhes ao commit;
+ - Tente quebrar a linha em 75 caracteres;
+ - Identifique sua audiência;
+ - Explique tudo;
+ - Use markdown.
+
+-> Rodapé
+ - Referencie assuntos relacionados.
+
+Comandos
+
+1. $ git config --global --list
+2. $ git config --global core.editor"nome do editor" [ core.editor"vim" or core.editor"code --wait"]
+OBS: $ git config --global --unset core.editor"vim" or core.editor"code --wait" (Desfaz a especificação do editor)
+
+*No editor "vim" aperta tecla V para conseguir editar os campos visuais.
+*No editor "vim" aperta INSERT para conseguir editar os campos visuais.
+*Para sair :wq (salvar e sair).
+
+
+

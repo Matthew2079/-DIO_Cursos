@@ -1,0 +1,36 @@
+GitHUB
+
+Chave SSH - Estabelecer uma conexão segura entre 2 máquinas.
+
+Gerando a chave SSH.
+https://dev.to/dxwebster/como-conectar-ao-github-com-chaves-ssh-1i41
+
+Inicializar o Git Bash.
+Chaves já existentes
+
+1. ssh-keygen -t ed25519 -c email (clica enter)
+2. insira uma senha (clica enter)
+3. clear
+4. cd /c/Users/seu usuario/.ssh
+5. ls
+6. cat suachave.pub
+7. copiar a chave publica
+8. ir até o site do GitHub
+9. SSH keys / add new
+10. criar um nome e colar a chave publica no campo
+11. retorna ao Git Bash.
+12. cd /c/Users/seu usuario/.ssh
+13. ls
+14. pwd /c/Users/seu usuario/.ssh
+15. eval $(ssh-agent -s) estar o agent e o seu PID
+16. passar a chave com o comando ssh-add 'sua chave'
+19. entra com sua frase de acesso.
+
+Token de acesso pessoal - Outra maneira de criar.
+
+1. Developer Settings em GitHub.
+2. Personal acess tokens
+3. Coisas padrão do Git marcar a opção 'repo'.
+4. Gerar o token.
+5. Salvar o token gerado em um local seguro.
+6. Clonar pelo HTTPS, você irá usar o token criado.

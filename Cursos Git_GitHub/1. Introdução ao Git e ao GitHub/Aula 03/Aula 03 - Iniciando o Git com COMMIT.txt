@@ -1,0 +1,23 @@
+- Iniciar o GIT
+- Iniciar o Versionamento
+- Criar um commit
+
+-> git init
+-> git add 
+-> git commit
+
+Criando um repositório
+**flag -a (mostra arquivos ocultos) acessar a pasta de gerenciamento do Git -> cd .git/
+-> Criar o repositório (pasta)
+--> Inicializar o repositório com $ git init.
+* Primeiro uso solicita:
+** $ git config --global user.email "seu email"
+** $ git congig --global user.name "seu usuario"
+
+-> Adicionando um arquivo.
+1. criar um arquivo com a extensão .md (recomenda o typora) por exemplo, ou poderia ser um arquivo .txt normal [dentro do repositório].
+2. retornar ao Git Bash
+3. dentro da pasta que está o repositorio ex: User@Matthew-Laptop MINGW64 /c/Workspace/livro-receitas (master)
+4. git add*
+5. git commit -m "commit inicial"
+

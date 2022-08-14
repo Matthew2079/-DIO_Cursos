@@ -1,0 +1,22 @@
+
+Comando $ git config --list - mostra todas as configurações salvas.
+Comando $ git config --global -- unset user.email - reseta o email configurado ao dispositivo.
+Comando $ git config --global -- unset user.name - reseta o usuario configurado ao dispositivo.
+
+Comando $ git config --global -- user.email "seu email" - configura novo nome.
+Comando $ git config --global -- user.name "seu nome de usuario" - configura novo nome.
+
+Comando $ git remote add origin ....link.... - adiciona o link da onde está o repositório remoto.
+Comando $ git remote -v - mostra os repositórios referenciados da máquina atual.
+
+Comando $ git push origin master - sobe os arquivos daquele repositório.
+
+Criando repositório no GitHub.
+
+1. Acessar o GitHub
+2. Ir Até a aba Criar novo repositório
+3. Se inserir arquivo README marcar a opção, senão deixa vazio.
+4. Criar o repositório
+5. Copiar a URL gerada do HTTPS e ir para o GUI BASH.
+6. git remote add origin ....link....
+7. git push origin master (Upload dos arquvios)

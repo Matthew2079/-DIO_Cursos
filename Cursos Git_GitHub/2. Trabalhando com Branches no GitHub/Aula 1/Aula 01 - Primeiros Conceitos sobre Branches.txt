@@ -1,0 +1,40 @@
+
+Comandos checkout e merge
+
+Comandos
+
+1. $ git checkout -b (Cria uma branch nova e se move para ela / checkout isolado indica movimentação entre branches)
+
+OBS: para juntar as branches de um repositório antes é necessário se mover a branch de origem e posteriormente executar o comando.
+
+2. $ git checkout 'nomeDaBranchOrigem'
+3. $ git merge 'nomeDaNovaBranch' 
+4. $ git push origin main
+
+--------------------------------------------------------------------------------------
+
+Guiando-se nas branches com a Tag HEAD
+
+- A Tag HEAD aponta para branch do último commit válido.
+
+--------------------------------------------------------------------------------------
+
+O que são branches?
+
+-> O comando git branch permite criar, listar, renomear e excluir ramificações. 
+-> Ele não permite alternar entre as ramificações ou reunir um histórico bifurcado de novo. 
+-> Por esse motivo, o comando git branch é muito integrado com os comandos git checkout e git merge.
+--> Uma branch é literalmente uma ramificação da base do código.
+
+Exemplo:
+
+Main
+-> Commit -m "adiciona navbar"
+ -> commit -m "troca cor do fundo"
+  -> commit -m "altera lógica pagamento"
+
+Branch nova-funcionalidade 
+-> commit -m "adiciona pagina de contato"
+ -> commit -m "adiciona formulario de contato"
+
+---> commit -m "merge" -- MAIN -- (junta as branches)

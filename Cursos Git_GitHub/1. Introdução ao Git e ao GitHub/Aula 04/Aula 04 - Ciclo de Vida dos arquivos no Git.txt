@@ -1,0 +1,22 @@
+GIT INIT
+- Por meio deste comando estamos criando um repositório dentro da pasta .git
+
+Tracked - Arquivos conhecidos pelo GIT.
+- Unmodified
+- Modified
+- Staged
+
+Untracked - Arquivos desconhecidos pelo GIT.
+
+git add - Move os arquivos para o estágio Staged.
+git commit -m "mensagem do commit" - Move os arquivos do estágio final para unmodified.
+
+
+------> Ambientes de Desenvolvimento 
+
+Working Directory -> Staging Area -> Local Repository (Após o commit)
+
+Remote Repository (Servidor) -> arquivos migrados (GitHub)
+
+Comando $ git status - mostra o status do repositório atual.
+Comando $ git add *  - seleciona todos arquivos da Working Directory.

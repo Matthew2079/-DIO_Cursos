@@ -1,0 +1,17 @@
+Comando $ git push origin master - sobe os arquivos daquele repositório para o remoto.
+Comando $ git pull origin master - puxa os arquivos daquele repositório remoto.
+
+Para resolver conflitos de versões de códigos salvos na plataforma.
+Conflitos de Merges.
+
+Exemplo:
+
+- Ocorre quando o GitHub identifica modificações de uma versão hospeda ser mais recente que a suas em seu código, para resolver: 
+
+1. Baixar o arquivo mais recente.
+2. Identificar o problema.
+3. Adicionar as modificações ao seu arquivo.
+4. Subir novamente.
+5. git add *
+6. git commit -m "sua mensagem"
+7. git push origin master.
