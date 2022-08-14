@@ -1,4 +1,4 @@
-# Curso Git / GitHub :man_cook:
+# Curso Git / GitHub
 
 - Repositório que tem informações direcionadas ao Git / GitHub.
 
